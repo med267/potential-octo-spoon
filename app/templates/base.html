@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - App</title>
+      {% else %}
+      <title>No title if no supplied to render template</title>
+      {% endif %}
+    </head>
+    <body>
+      <div>CountIt Calorie Counting: <a href="/index">Home</a></div>
+      <hr>
+      {% block content %}{% endblock %}
+    </body>
+</html>
